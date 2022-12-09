@@ -27,13 +27,12 @@ def calorie_counting_part2(values):
     efs_calories = cal_calories_counting(values)
     return sum(efs_calories[-3:])
 
-dir = os.path.abspath(os.path.dirname(__file__))
 if __name__ == "__main__":
     for path in sys.argv[1:]:
         with open(path) as file:
-            _input = file.read().splitlines()
-            part1 = calorie_counting_part1(_input)
-            part2 = calorie_counting_part2(_input)
+            v = file.read().splitlines()
+            part1 = calorie_counting_part1(v)
+            part2 = calorie_counting_part2(v)
             print('Part 1: ', part1)
             print('Part 2:', part2)
 

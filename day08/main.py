@@ -1,7 +1,6 @@
 import sys
 
 
-scenic_score = 0
 def tree_top_tree_house(values):
     row = len(values)
     col = len(values[0])
